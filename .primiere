@@ -1,0 +1,47 @@
+module.exports = {
+	"enableEnvars": true,
+	"enableTemplating": true,
+	"paths": {
+		"root": {
+			"src": "./src/",
+			"app": "./app/",
+			"build": "./app/"	
+		},
+		"data": {
+			"src": "./src/data/"
+		},
+		"pages": {
+			"src": "./src/",
+			"dest": "./app/",
+			"files": ["~/{views,includes}/**/*.html"],
+			"views": ["~/views/**/*.html"],
+			"paths": ["~/views/","~/includes/"]
+		},
+		"styles": {
+			"src": "./src/assets/css",
+			"dest": "./app/assets/css",
+			"files": ["~/**/*.css"],
+			"entries": "~/entries/**/*.css",
+			"ignore": ["~/vendor/**/*"]
+		},
+		"scripts": {
+			"src": "./src/assets/js",
+			"dest": "./app/assets/js",
+			"files": ["~/**/*.js"],
+			"entries": ["~/entries/**/*.js"],
+			"ignore": ["~/vendor/**/*"]
+		},
+		"images": {
+			"src": "./src/assets/img",
+			"dest": "./app/assets/img",
+			"files": ["~/**/*.{gif,jpg,png,svg}"],
+			"ignore": ["~/__archive__/**/*"]
+		},
+		"assets": {
+			"src": "./src/assets",
+			"dest": "./app/assets",
+			"files": ["~/*"],
+			"ignore": ["~/{css,img,js}/**/*", "~/_*"]
+		}
+	}
+}
