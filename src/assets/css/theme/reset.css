@@ -1,0 +1,12 @@
+a, address {
+	color: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	text-decoration: inherit;
+}
+a, button {
+	cursor: pointer;
+}
+ul > li {
+	list-style: none;
+}

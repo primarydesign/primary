@@ -7,6 +7,6 @@
 	</ul>
 	<ul class="footer__bullets">
 		<li class="footer__bullet">&copy; <span class="footer__copyright">{{ moment().format('YYYY') }}</span> {{ company.title }}</li>
-		<li class="footer__bullet"><a href="tel:+1{{ phone_number | replace('.', '') }}">{{ phone_number }}</a></li>
+		<li class="footer__bullet"><a class="footer__phone" href="tel:+1{{ phone_number | replace('.', '') }}">{{ phone_number }}</a></li>
 	</ul>
 </footer>
