@@ -19,5 +19,7 @@ module.exports = [
 	rucksack(),
 	autoprefixer(),
 	flexibility(),
-	cssnano()
+	cssnano({
+		discardUnused: false
+	})
 ];

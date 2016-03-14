@@ -40,7 +40,7 @@ module.exports = {
 		"assets": {
 			"src": "./src/assets",
 			"dest": "./app/assets",
-			"files": ["~/*"],
+			"files": ["~/**/*"],
 			"ignore": ["~/{css,img,js}/**/*", "~/_*"]
 		}
 	}
