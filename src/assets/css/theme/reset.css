@@ -3,7 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
-
+a, em, h1, h2, h3, h4, h5, span, strong {
+	display: inline-block;
+}
 a, address {
 	color: inherit;
 	font-size: inherit;

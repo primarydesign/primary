@@ -2,11 +2,13 @@
 <footer class="footer">
 	<ul class="socialMedia">
 		{% for account, profileURL in company['social-media'] %}
-			<li class="socialMedia__item"><a class="socialMedia__icon" href="{{ profileURL }}" class="footer__socialIcon" data-socia-media="{{ account }}"></a></li>
+			<li class="socialMedia__item">
+				<a class="socialMedia__icon" href="{{ profileURL }}" class="footer__socialIcon" style="background-image: url('/assets/img/social-icons/{{ account }}.svg');"></a>
+			</li>
 		{% endfor %}
 	</ul>
 	<ul class="footer__bullets">
-		<li class="footer__bullet">&copy; <span class="footer__copyright">{{ moment().format('YYYY') }}</span> {{ company.title }}</li>
+		<li class="footer__bullet"><span>&copy; <span class="footer__copyright">{{ moment().format('YYYY') }}</span> {{ company.title }}</span></li>
 		<li class="footer__bullet"><a class="footer__phone" href="tel:+1{{ phone_number | replace('.', '') }}">{{ phone_number }}</a></li>
 	</ul>
 </footer>

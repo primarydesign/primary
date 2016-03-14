@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>{{ page.title - site.company if page.title else site.company }}</title>
 	{% if page.description %}<meta name="description" content="{{ page.description | truncate(55) }}">{% endif %}
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="maximum-scale=1, width=device-width, initial-scale=1, user-scalable=0">
 	<meta name="google-site-verification" content="NItnTeV29_bimRGUkxWTHMMjmchi-SusKcqlwZ96tTw" />
 	<link rel="icon" type="image/png" href="/img/favicon.png">
 	<link rel="stylesheet" href="/assets/css/{{ page.basename }}.css">
@@ -20,10 +20,12 @@
 	</script>
 </head>
 <body class="page">
-	{% include 'navigation.html' %}
-	<main class="page__content">{% block content %}{% endblock %}</main>
-	<button class="page__scryer" type="button"></button>
-	{% include 'footer.html' %}
-	{% block scripts %}{% endblock %}
+	<div class="page__wrapper">
+		{% include 'navigation.html' %}
+		<main class="page__content">{% block content %}{% endblock %}</main>
+		<button class="page__scryer" type="button"></button>
+		{% include 'footer.html' %}
+		{% block scripts %}{% endblock %}
+	</div>
 </body>
 </html>

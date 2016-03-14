@@ -1,3 +1,13 @@
 html {
 	font-size: 16px;
 }
+
+.page {}
+.page__wrapper {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.page__content {
+	flex: 1;
+}
