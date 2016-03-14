@@ -1,0 +1,21 @@
+<header class="navHeader">
+	<a class="navHeader__logo">
+		<img src="/assets/img/logo.svg" alt="Primary Design, Inc." class="navHeader__logoImage">
+	</a>
+	<nav class="navMenu">
+		<ul class="navMenu__items">
+			{% for item in ['work', 'about', 'blog', 'careers', contact'] %}
+				<li class="navMenu__item">
+					<a href="/{{ item }}" class="navMenu__link">{{ item }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</nav>
+	<button class="navToggle" type="button">
+		<ul class="navToggle__lines">
+			<li class="navToggle__line"></li>
+			<li class="navToggle__line"></li>
+			<li class="navToggle__line"></li>
+		</ul>
+	</button>
+</header>

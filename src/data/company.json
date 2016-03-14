@@ -1,0 +1,31 @@
+{
+	"title": "Primary Design, Inc.",
+	"name": "Primary",
+	"locations": {
+		"main": {
+			"address": "57 Wingate Street",
+			"floor": "4",
+			"city": "Haverhill",
+			"state": "MA",
+			"zipcode": "01832",
+			"phone": "978.373.1565",
+			"email": "info@primarydesign.com"
+		},
+		"branch": {
+			"address": "129 Newbury Street",
+			"floor": "2",
+			"city": "Boston",
+			"state": "MA",
+			"zipcode": "02116",
+			"phone": "617.398.7159",
+			"email": "info@primarydesign.com"
+		}
+	},
+	"social-media": {
+		"twitter": "https://twitter.com/Primary_Design",
+		"linkedin": "http://www.linkedin.com/company/primary-design-inc",
+		"facebook": "https://www.facebook.com/PrimaryDesignInc",
+		"googleplus": "https://plus.google.com/117617655650900414396",
+		"instagram": "http://instagram.com/primarydesigninc"
+	}
+}

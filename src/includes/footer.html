@@ -1,0 +1,12 @@
+{% set phone_number = company.locations.main.phone %}
+<footer class="footer">
+	<ul class="socialMedia">
+		{% for account, profileURL in company['social-media'] %}
+			<li class="socialMedia__item"><a class="socialMedia__icon" href="{{ profileURL }}" class="footer__socialIcon" data-socia-media="{{ account }}"></a></li>
+		{% endfor %}
+	</ul>
+	<ul class="footer__bullets">
+		<li class="footer__bullet">&copy; <span class="footer__copyright">{{ moment().format('YYYY') }}</span> {{ company.title }}</li>
+		<li class="footer__bullet"><a href="tel:+1{{ phone_number | replace('.', '') }}">{{ phone_number }}</a></li>
+	</ul>
+</footer>
