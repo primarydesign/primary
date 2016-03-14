@@ -1,13 +1,13 @@
 <header class="navHeader">
 	<div class="navHeader__constraint">
-		<a class="navHeader__logo" href="/">
-			<img src="/assets/img/logo.jpg" alt="Primary Design, Inc." class="navHeader__logoImage">
+		<a class="navHeader__logo" href="$site">
+			<img src="$site/assets/img/logo.jpg" alt="Primary Design, Inc." class="navHeader__logoImage">
 		</a>
 		<nav class="navMenu">
 			<ul class="navMenu__items">
 				{% for item in ['work', 'about', 'blog', 'careers', contact'] %}
 					<li class="navMenu__item">
-						<a href="/{{ item }}" class="navMenu__link">{{ item }}</a>
+						<a href="$site/{{ item }}" class="navMenu__link">{{ item }}</a>
 					</li>
 				{% endfor %}
 			</ul>

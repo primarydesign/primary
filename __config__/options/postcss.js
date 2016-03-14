@@ -20,6 +20,7 @@ module.exports = [
 	autoprefixer(),
 	flexibility(),
 	cssnano({
-		discardUnused: false
+		discardUnused: false,
+		normalizeUrl: false
 	})
 ];
