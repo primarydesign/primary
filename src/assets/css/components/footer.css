@@ -1,0 +1,14 @@
+.socialMedia {
+	display: flex;
+	padding: 0;
+	flex-direction: row;
+	justify-content: space-between;
+	background: blue;
+	width: 100%;
+}
+.socialMedia__item {
+	list-style: none;
+	background: red;
+	height: 30px;
+	width: 30px;
+}
