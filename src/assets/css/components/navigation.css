@@ -1,11 +1,95 @@
-.navHeader {}
-.navHeader__logo {}
+.navHeader {
+	height: 75px;
+	padding: 0 2.00rem !important;
+	position: fixed;
+	top: 0;left: 0;
+	width: 100%;
+	background-color: $blue;
+}
+.navHeader__constraint {
+	display: flex;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 64rem;
+	width: 100%;
+	align-items: center;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.navHeader__logo {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
 .navHeader__logoImage {}
 
-.navMenu {}
-.navMenu__item {}
-.navMenu__link {}
+.navMenu {
+}
+.navMenu__items {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.navMenu__item {
+	margin-left: 40px;
+}
+.navMenu__item:last-of-type {
+	margin-left: 0;
+}
+.navMenu__link {
+	color: $white;
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+.navMenu__link:hover,
+.navMenu__link:focus {
+	color: $black;
+}
+.navToggle {
+	height: 100%;
+	width: 25px;
+}
+.navToggle__lines {
 
-.navToggle {}
-.navToggle__lines {}
-.navToggle__line {}
+}
+.navToggle__line {
+	display: block;
+	height: 3px;
+	margin-bottom: 6px;
+	width: 100%;
+	background: $white;
+}
+.navToggle__line:last-of-type {
+	margin-bottom: 0;
+}
+
+@media $small {
+	.navHeader { height: 60px }
+	.navHeader__logo { padding: 10px 0; }
+	.navMenu {
+		height: 100vh;
+		position: absolute;
+		top: 0;left: 100%;
+		width: 250px;
+		background-color: $white;
+	}
+	.navMenu__items {
+		display: block;
+		padding-left: 2.80rem;
+	}
+	.navMenu__item {
+		margin: 2.80rem 0 0;
+	}
+	.navMenu__link {
+		color: $blue;
+		font-size: 1.25rem;
+		text-transform: uppercase;
+	}
+}
+@media $not-small {
+	.navToggle {
+		display: none;
+	}
+}
