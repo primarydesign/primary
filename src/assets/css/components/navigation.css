@@ -77,10 +77,13 @@
 	}
 	.navMenu__items {
 		display: block;
-		padding-left: 2.80rem;
+		padding-left: 3.60rem;
 	}
 	.navMenu__item {
-		margin: 2.80rem 0 0;
+		margin: 0 0 2.80rem;
+	}
+	.navMenu__item:last-of-type {
+		margin-bottom: 0;
 	}
 	.navMenu__link {
 		color: $blue;
