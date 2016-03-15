@@ -6,7 +6,9 @@ html {
 .page__wrapper {
 	display: flex;
 	min-height: 100vh;
+	padding-top: 75px;
 	flex-direction: column;
+	@media $small { padding-top: 60px; }
 }
 .page__content {
 	flex: 1;

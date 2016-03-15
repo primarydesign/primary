@@ -1,5 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-	<p>This is the home page!</p>
+	<div class="lory">
+		<div class="lory__frame">
+			<ul class="lory__slides">
+				{% for role in ['creative','digital','media','strategy','production'] %}
+					<li class="lory__slide quinqueRole">
+						<h2 class="quinqueRole__heading">
+							<small class="">More than a</small>
+							<span class="">{{ role | title }} <i data-kern="agency">A</i>gency</span>
+						</h2>
+						<button class="quinqueRole__cta">See More</button>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
 {% endblock %}
