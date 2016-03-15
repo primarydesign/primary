@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "flexibility": "^1.0.5",
-    "postcss-flexibility": "^1.0.3"
+    "postcss-flexibility": "^1.0.3",
+    "velocity-animate": "^1.2.3"
   }
 }

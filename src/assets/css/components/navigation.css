@@ -71,7 +71,7 @@
 	.navMenu {
 		height: 100vh;
 		position: absolute;
-		top: 0;left: 100%;
+		top: 100%;left: 100%;
 		width: 250px;
 		background-color: $white;
 	}
