@@ -13,3 +13,12 @@ html {
 .page__content {
 	flex: 1;
 }
+.constraint {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 2.00rem;
+	width: 100%;
+}
+.constraint--small {
+	max-width: 900px;
+}

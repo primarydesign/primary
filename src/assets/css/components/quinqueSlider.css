@@ -3,7 +3,7 @@
     background-color: $gray;
     @media $small { height: 500px; }
     @media $medium { height: 600px; }
-    @media $not-medium { height: 700px; }
+    @media $not-medium { height: 750px; }
 }
 .quinqueSlider__frame {
     height: 100%;

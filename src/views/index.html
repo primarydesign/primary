@@ -18,4 +18,26 @@
 			</ul>
 		</div>
 	</div>
+	<div class="constraint">
+		<section class="introduction">
+			<h2 class="introduction__heading type type--heading">We're 5 Agencies in 1</h1>
+			<p class="introduction__text type type--text type--large">At Primary, we can do just about everything that you might need from several agencies – Strategy, Creative, Digital, Media, and Production. We work hard to save you time, money, even loss of sleep. It allows us to keep your brand integrated so you don’t have to worry. It puts you at the center of our attention. Every day.</p>
+		</section>
+		<section class="services">
+			<h2 class="services__heading type type--heading">What We Do</h2>
+			<figure class="services__figure"><img src="$site/assets/img/services_diagram.png" alt="" class="services__image"></figure>
+			<ul class="services__snippets">
+				{% for service, bullets in miscellany.serviceSnippets %}
+					<li class="serviceSnippet">
+						<h3 class="serviceSnippet__heading type type--heading type--small">{{ service }}</h3>
+						<ul class="serviceSnippet__bullets">
+							{% for bullet in bullets %}
+								<li class="serviceSnippet__bullet type">{{ bullet }}</li>
+							{% endfor %}
+						</ul>
+					</li>
+				{% endfor %}
+			</ul>
+		</section>	
+	</div>
 {% endblock %}

@@ -1,2 +1,42 @@
 @import '../theme/index';
 @import '../components/quinqueSlider';
+
+.introduction {
+	margin: 7.00rem 0 2.60rem;
+}
+.introduction__heading {
+	margin-bottom: 2.60rem;
+	width: 100%;
+	text-align: center;
+}
+.introduction__text {
+	text-align: justify;
+}
+
+.services {}
+.services__heading {}
+.services__figure {
+	text-align: center;
+}
+.services__image {}
+.services__snippets {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.serviceSnippet {
+	display: block;
+	margin-bottom: 35px;
+	text-align: center;
+	@media $extra-small { width: 100%; }
+	@media $not-extra-small { width: 50%; }
+	@media $not-medium { width: 33%; }
+}
+.serviceSnippet__heading {}
+.serviceSnippet__bullets {}
+.serviceSnippet__bullet {
+	line-height: 1.60em;
+}

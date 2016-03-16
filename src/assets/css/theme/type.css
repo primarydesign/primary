@@ -9,3 +9,29 @@ h1, h2, h3, h4, h5, h6 {
 div, span, p, a, li {
 	font-family: $roboto;
 }
+
+.type {
+	color: $gray;
+	font-family: $roboto;
+}
+
+.type--heading {
+	width: 100%;
+	font-family: $lubalin;
+	font-size: 2.40em;
+	font-weight: 300;
+	letter-spacing: 0.125rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+.type--paragraph {}
+.type--fragment {}
+
+.type--heading.type--small {
+	font-size: 1.20em;
+}
+.type--heading.type--large {}
+.type--text.type--small {}
+.type--text.type--large {
+	font-size: 1.60em;
+}
