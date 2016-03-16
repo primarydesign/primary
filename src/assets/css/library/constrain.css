@@ -1,0 +1,10 @@
+@define-mixin constrain {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 2.00rem;
+	width: 100%;
+	@media $small { padding: 0 2.00rem; }
+	@media $medium { padding: 0 3.00rem; }
+	@media $not-medium { padding: 0 4.00rem; }
+	@media $extra-large { padding: 0; }
+}

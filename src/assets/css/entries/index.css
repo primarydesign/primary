@@ -1,5 +1,6 @@
 @import '../theme/index';
 @import '../components/quinqueSlider';
+@import '../components/contactCaller';
 
 .introduction {
 	margin: 7.00rem 0 2.60rem;
@@ -16,6 +17,7 @@
 .services {}
 .services__heading {}
 .services__figure {
+	margin-bottom: 2.00rem;
 	text-align: center;
 }
 .services__image {}

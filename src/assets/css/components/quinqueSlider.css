@@ -66,13 +66,6 @@
 .quinqueRole__button {
     display: block;
     margin: 0 auto;
-    padding: 0.75em 2.90em;
-    background-color: $blue;
-    color: $white;
-    font-size: 1.15em;
-    @media $small {
-        padding: 0.75rem 2.50rem;
-    }
 }
 
 .quinqueRole[data-role='creative'] { background-image: url('$site/assets/img/backgrounds/creative.jpg'); }

@@ -1,0 +1,39 @@
+{
+	"serviceSnippets": {
+		"strategy": [
+			"Naming",
+			"Positioning",
+			"Consumer Profiling",
+			"SEO",
+			"User Experience"
+		],
+		"creative": [
+			"Logos / Identities",
+			"Campaigns",
+			"Brochures / Collateral",
+			"Packaging",
+			"Photography"
+		],
+		"digital": [
+			"Responsive Web Design",
+			"iOS + Android Apps",
+			"Email Marketing",
+			"Motion Graphics",
+			"Banner Ads"
+		],
+		"media": [
+			"Media Planning / Buying",
+			"Event Planning",
+			"Social Media",
+			"Pay Per Click (PPC)",
+			"Ad Fraud Detection"
+		],
+		"production": [
+			"Video Production",
+			"Design Production",
+			"Digital Production",
+			"2D / 3D Floor Plans",
+			"Site Plans"
+		]
+	}
+}

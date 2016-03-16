@@ -1,0 +1,9 @@
+.contactCaller {
+	@mixin constrain;
+	margin: 100px auto;
+	text-align: center;
+}
+.contactCaller__headline {}
+.contactCaller__button {
+	margin: 4.40rem 0 0;
+}
