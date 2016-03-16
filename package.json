@@ -48,6 +48,8 @@
   },
   "dependencies": {
     "flexibility": "^1.0.5",
+    "jquery": "^2.2.1",
+    "lory.js": "^2.0.1",
     "postcss-flexibility": "^1.0.3",
     "velocity-animate": "^1.2.3"
   }

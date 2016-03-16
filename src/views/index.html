@@ -1,16 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-	<div class="lory">
-		<div class="lory__frame">
-			<ul class="lory__slides">
+	<div class="quinqueSlider">
+		<div class="quinqueSlider__frame">
+			<ul class="quinqueSlider__track">
 				{% for role in ['creative','digital','media','strategy','production'] %}
-					<li class="lory__slide quinqueRole">
-						<h2 class="quinqueRole__heading">
-							<small class="">More than a</small>
-							<span class="">{{ role | title }} <i data-kern="agency">A</i>gency</span>
-						</h2>
-						<button class="quinqueRole__cta">See More</button>
+					<li class="quinqueRole" data-role="{{ role }}">
+						<div class="quinqueRole__wrapper">
+							<h2 class="quinqueRole__heading">
+								<small>More than a</small>
+								<span>{{ role | title }} <i data-kern="agency">A</i>gency</span>
+							</h2>
+							<button class="quinqueRole__button">See More</button>
+						</div>
 					</li>
 				{% endfor %}
 			</ul>

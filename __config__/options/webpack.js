@@ -6,9 +6,9 @@ import {envar} from '../environ';
 module.exports = {
 	devtool: envar('development', 'source-maps'),
 	plugins: [
-		// new webpack.ProvidePlugin({
-			// jQuery: 'jquery'
-		// }),
+		new webpack.ProvidePlugin({
+			jQuery: 'jquery'
+		}),
 		envar('development', function(){}, new webpack.optimize.UglifyJsPlugin(uglify))
 	],
 	resolve: {

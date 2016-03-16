@@ -6,7 +6,7 @@
 a, em, h1, h2, h3, h4, h5, span, strong {
 	display: inline-block;
 }
-a, address {
+a, address, i {
 	color: inherit;
 	font-size: inherit;
 	font-style: inherit;

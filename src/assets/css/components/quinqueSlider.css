@@ -1,0 +1,82 @@
+.quinqueSlider {
+    width: 100%;
+    background-color: $gray;
+    @media $small { height: 500px; }
+    @media $medium { height: 600px; }
+    @media $not-medium { height: 700px; }
+}
+.quinqueSlider__frame {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.quinqueSlider__track {
+    display: inline-block;
+    height: 100%;
+}
+
+.quinqueRole {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100vw;
+    text-align: center;
+    background: no-repeat center / cover;
+}
+.quinqueRole:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    vertical-align: middle;
+    width: 0;
+}
+.quinqueRole__wrapper {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-size: 1.00rem;
+    white-space: normal;
+    @media $small { padding: 0 1.50rem; }
+}
+.quinqueRole__heading {
+    padding-bottom: 2.00em;
+    color: $white;
+    letter-spacing: 2.00px;
+    text-shadow: 0 -1px 0 $black;
+}
+.quinqueRole__heading > small {
+    display: block;
+    margin-bottom: 1.00em;
+    @media $small { font-size: 1.40em; }
+    @media $not-small { font-size: 1.80em; }
+}
+.quinqueRole__heading > span {
+    font-family: $lubalin;
+    line-height: 1.20em;
+    text-transform: uppercase;
+    @media $small { font-size: 1.80em; }
+    @media $medium { font-size: 2.20em; }
+    @media $not-medium { font-size: 2.60em; }
+}
+.quinqueRole__button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.75em 2.90em;
+    background-color: $blue;
+    color: $white;
+    font-size: 1.15em;
+    @media $small {
+        padding: 0.75rem 2.50rem;
+    }
+}
+
+.quinqueRole[data-role='creative'] { background-image: url('$site/assets/img/backgrounds/creative.jpg'); }
+.quinqueRole[data-role='digital'] { background-image: url('$site/assets/img/backgrounds/digital.jpg'); }
+.quinqueRole[data-role='media'] { background-image: url('$site/assets/img/backgrounds/media.jpg'); }
+.quinqueRole[data-role='strategy'] { background-image: url('$site/assets/img/backgrounds/strategy.jpg'); }
+.quinqueRole[data-role='production'] { background-image: url('$site/assets/img/backgrounds/production.jpg'); }
