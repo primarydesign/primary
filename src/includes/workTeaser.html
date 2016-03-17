@@ -1,0 +1,17 @@
+<div class="workTeaser">
+	<h3 class="workTeaser__heading type type--heading">Our Work</h3>
+	<ul class="workTeaser__items">
+		{% for piece in workTeaser %}
+			{% if loop.index <= 5 %}
+				<li class="workTeaserItem">
+					<figure class="workTeaserItem__wrapper">
+						<img class="workTeaserItem__image" src="$site/assets/img/work/{{ piece.client|cleanse }}/thumbnail.jpg" alt="{{ piece.client }}">
+						<figcaption class="workTeaserItem__caption">
+							<a href="$site/work/{{ piece.client|cleanse }}">{{ (piece.slug or piece.client) }}</a>
+						</figcaption>
+					</figure>
+				</li>
+			{% endif %}	
+		{% endfor %}
+	</ul>
+</div>

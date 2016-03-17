@@ -1,2 +1,3 @@
 import moment from 'moment';
-export {moment};
+
+module.exports = moment;

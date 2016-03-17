@@ -40,5 +40,7 @@
 			</ul>
 		</section>	
 	</div>
+	{% set workTeaser = portfolio | queryAll('client', ['Legacy Partners', 'Martha\'s Vineyard Dressing Co.', 'Related', 'CharterSearch', 'AVA']) %}
+	{% include 'workTeaser.html' %}
 	{% include 'contactCaller.html' %}
 {% endblock %}
