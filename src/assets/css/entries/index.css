@@ -1,6 +1,7 @@
 @import '../theme/index';
 @import '../components/quinqueSlider';
 @import '../components/contactCaller';
+@import '../components/workTeaser';
 
 .introduction {
 	margin: 7.00rem 0 2.60rem;
